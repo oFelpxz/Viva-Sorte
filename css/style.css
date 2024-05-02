@@ -1,0 +1,166 @@
+/*=== GERAL ===*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: hsl(226, 59%, 45%);
+
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+.container{
+  width: 680px;
+  max-width: 100%;
+
+}
+
+/*=== HEADER ===*/
+
+
+#main-header{
+  width: 100%;
+  padding: 1.1rem;
+  background-color: var(--main-color);
+}
+
+
+#main-header img{
+  width: 150px;
+  max-width: 50% !important;
+}
+
+
+/*=== BANNER ===*/
+
+#hero-section{
+  display: flex;
+  justify-content: center;
+}
+
+#hero-section .container{
+  position: relative;
+  padding-top: 1.8rem;
+}
+
+#hero-section img {
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+#hero-section .buy-now {
+  position: absolute;
+  right: 1.4rem; 
+  top: 2.68rem;
+  color: white;
+  font-size: 0.75rem;
+  background-color: #52b52f;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.16);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*=== BANNER ===*/
+
+#ticket-section{
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#ticket-section .container{
+  display: flex;
+  flex-direction: column;
+}
+
+#ticket-section header{
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+#ticket-section header h2{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#ticket-section header h1{
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #2f4eb5 ;
+}
+
+#ticket-section header p{
+  margin-top: 21px ;
+  font-size: 1rem ;
+  color: rgb(100 116 139) ;
+  font-weight: 400 ;
+}
+
+#ticket-section .tickets{
+  width: 100%;
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-inline: 2.4rem;
+  row-gap: 1.2rem;
+}
+
+#ticket-section .tickets .ticket{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 50%;
+  gap: 0.6rem;
+  color: black;
+  background-color: white;
+  border: none;
+  padding: 1.5rem 2.3rem;
+  border-radius: 0.6rem;
+  border: solid rgba(128, 128, 128, 0.137) 1px;
+  -webkit-box-shadow: 0px 12px 16px -13px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 12px 16px -13px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 12px 16px -13px rgba(0, 0, 0, 0.47);
+}
+
+#ticket-section .tickets .ticket h1{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1.9rem;
+}
+
+#ticket-section .tickets .ticket i{
+  font-size: 1.6rem;
+}
+
+#ticket-section .tickets .ticket p{
+  font-size: 0.9rem;
+}
+
+#ticket-section .tickets .ticket .price{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
