@@ -32,54 +32,59 @@
         <p>VEM CONCORRER A 10 CAMIONETES POR APENAS 99 CENTAVOS!</p>
       </header>
       <div class="tickets">
-        <div class="ticket">
+        <div id="ticket1" class="ticket">
           <h1><i class="fa-solid fa-database"></i>10</h1>
           <p class="price">R$9,90</p>
           <p>SELECIONAR</p>
         </div>
 
-        <div class="ticket">
+        <div id="ticket2" class="ticket">
           <h1><i class="fa-solid fa-database"></i>20</h1>
           <p class="price">R$19,80</p>
           <p>SELECIONAR</p>
         </div>
 
-        <div class="ticket">
+        <div id="ticket3"  class="ticket">
           <h1><i class="fa-solid fa-database"></i>50</h1>
           <p class="price">R$49,50</p>
           <p>SELECIONAR</p>
         </div>
 
-        <div class="ticket">
+        <div id="ticket4" class="ticket">
           <h1><i class="fa-solid fa-database"></i>100</h1>
           <p class="price">R$99,00</p>
           <p>SELECIONAR</p>
         </div>
 
-        <div class="ticket">
+        <div id="ticket5" class="ticket">
           <h1><i class="fa-solid fa-database"></i>200</h1>
           <p class="price">R$198,00</p>
           <p>SELECIONAR</p>
         </div>
 
-        <div class="ticket">
+        <div id="ticket6" class="ticket">
           <h1><i class="fa-solid fa-database"></i>500</h1>
           <p class="price">R$495,00</p>
           <p>SELECIONAR</p>
         </div>
+
+        <div class="star"><i class="fa-solid fa-star"></i></div>
       </div>
+
       <div class="buttons">
         <div class="select">
-          <input type="number">
+          <button class="minus"><i class="fa-solid fa-minus"></i></button>          
+          <input id="input" name="number" type="number" value="10" appearance="none">
+          <button class="plus"><i class="fa-solid fa-plus"></i></button>
         </div>
-        <div class="buy"><i></i>Comprar</div>
+        <div class="buy"><i class="fa-solid fa-cart-shopping"></i>Comprar</div>
       </div>
     </div>
   </section>
+
 <!-- Footer -->
   <footer>
       <div class="container">
-  
         <div class="logo-footer">
           <img src="img/main-logo.png" width="230" height="30.45" >
           <ul class="socials">
@@ -89,24 +94,18 @@
             <li><i class="fa-brands fa-youtube"></i></li>
           </ul>
         </div>
-  
         <div class="sobre" >
           <p >Sorteios lastreados por Títulos de Capitalização, da Modalidade Incentivo, emitidos pela VIA Capitalização S.A, inscrita no CNPJ sob nº 88.076.302/0001-94, e aprovados pela SUSEP através do registro na SUSEP Sorteio n° 15414.652257/2023-51. O valor das premiações aqui indicados são líquidos, já descontado o devido imposto de renda de 25%. O registro deste plano na SUSEP não implica, por parte da Autarquia, incentivo ou recomendação a sua comercialização.</p>
         </div>
-  
-
-
         <div class="parceiros" >
           <div class="parceiro">
             <p>Títulos emitidos por:</p>
             <img src="img/viacap-logo.png">
           </div>
-  
           <div class="parceiro">
             <p>Promoção realizada por:</p>
             <img src="img/viva-logo.png">
           </div>  
-  
           <div class="parceiro">
             <p>Desenvolvimento por:</p>
             <img src="img/edjdigital-logo.png">
@@ -116,5 +115,6 @@
     
   </footer>
   <script src="https://kit.fontawesome.com/e2963f2415.js" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
